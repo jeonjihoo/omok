@@ -1,0 +1,197 @@
+.container {
+  width: 1000px;
+  height: 780px;
+  display: flex;
+  flex-wrap: wrap;
+  transform: scale(0.8);
+  margin-left: 300px;
+}
+
+.omok {
+  width: 50px;
+  background-color: rgb(255, 197, 122);
+  height: 50px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.container .white {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+.container .black {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+.none {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+.interface {
+  width: 300px;
+  height: 780px;
+  border: 1px solid black;
+  background-color: black;
+  position: absolute;
+  top: 90px;
+  left: 65%;
+  border: 1px solid white;
+  box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa;
+}
+
+.turn {
+  position: relative;
+  background-color: rgb(121, 121, 121);
+}
+
+.turn > .black {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+  z-index: 5;
+  transform: scale(0.8);
+}
+
+.turn > .white {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+  z-index: 5;
+  transform: scale(0.8);
+}
+
+.turn .title {
+  color: white;
+  text-align: center;
+}
+
+.black-timer {
+  width: 300px;
+  height: 300px;
+}
+
+.white-timer {
+  width: 300px;
+  height: 300px;
+}
+
+.black-timer .title {
+  color: white;
+  text-align: center;
+}
+
+.white-timer .title {
+  color: white;
+  text-align: center;
+}
+
+.black-time , .white-time {
+  font-size: 90px;
+  text-align: center;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    color: white;
+}
+
+.black-time {
+  color: black;
+}
+
+.white-time {
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.option-bar {
+  width: 100%;
+  height: 50px;
+  box-shadow:
+    0 0 7px white,
+    0 0 145px #0fa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.option-bar i {
+  color: white;
+  font-size: 20px;
+  transition: 0.23s;
+  cursor: pointer;
+}
+
+.option-bar i:hover {
+  transform: scale(1.3);
+  filter: brightness(80%);
+}
+
+.game-wrap {
+  position: relative;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #0005;
+  display: none;
+}
+
+.modal-inner {
+  width: 1200px;
+  height: 700px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: snow;
+  position: absolute;
+}
